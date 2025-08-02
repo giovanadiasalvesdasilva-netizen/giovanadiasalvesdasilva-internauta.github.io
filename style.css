@@ -1,4 +1,16 @@
 /* Reset básico */
+@media (max-width: 768px) {
+  .produto, .contato {
+    font-size: 18px;
+    padding: 10px;
+    flex-direction: column; /* Se for flexbox */
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -102,6 +114,7 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
   padding: 40px 20px;
+  width: 100%;
   max-width: 1100px;
   margin: auto;
 }
@@ -117,6 +130,7 @@ footer {
 
 .produto img {
   width: 100%;
+  max-width: 400px;
   height: 300px;
   object-fit: cover;
   display: block;
@@ -229,4 +243,5 @@ footer {
   color: #e60000;
   font-weight: bold;
   
+
 }
